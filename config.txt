@@ -1,1 +1,2 @@
-Configuracao do Site: COR=VERMELHO
+Configuracao do Site: COR=ROXO
+
