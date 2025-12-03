@@ -1,0 +1,18 @@
+name: My Firts CI
+
+# Gatilho: Quando isso vai rodar?
+on: [push]
+
+# O que vai rodar?
+jobs:
+  teste-simples:
+    runs-on: ubuntu-latest  # A máquina que o GitHub vai emprestar
+    steps:
+      - name: Baixando o código (Checkout)
+        uses: actions/checkout@v3
+
+      - name: Executando um script
+        run: |
+          echo "Iniciando os testes..."
+          ls -la
+          echo "Se você está lendo isso no log, o pipeline funcionou!"
