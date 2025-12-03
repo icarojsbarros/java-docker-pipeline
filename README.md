@@ -22,3 +22,13 @@ Execute o comando abaixo no seu terminal para baixar a versão mais recente dire
 
 ```bash
 docker run --rm ghcr.io/icarojsbarros/java-docker-pipeline:latest
+
+## ☁️ Infraestrutura como Código (Terraform)
+
+O projeto inclui código IaC para provisionamento automático na AWS.
+Os arquivos estão localizados na pasta `/terraform`.
+
+### Recursos definidos (`main.tf`):
+- **Provider**: AWS (`us-east-1`).
+- **Recurso**: Instância EC2 (t2.micro/Ubuntu).
+- **Provisionamento**: Script `user_data` que instala Docker e roda o container da aplicação automaticamente ao iniciar a máquina.
