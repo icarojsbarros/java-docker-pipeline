@@ -1,0 +1,8 @@
+# Ignorar arquivos locais e binários do Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# Ignorar arquivos de log de falha
+crash.log
